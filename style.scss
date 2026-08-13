@@ -53,7 +53,7 @@ main{
         }
     }
 }
-&::after{
+&::before{
     content " ",
     background: red;
 }
