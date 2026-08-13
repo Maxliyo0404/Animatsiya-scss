@@ -54,6 +54,19 @@ main{
                 bottom: 10px;
                 left: 10px;
             }  
+            &::before {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: red;
+        
+        /* O'rtaga qo'yish uchun quyidagilar yoziladi: */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
             @keyframes  cards{
                 0%{
