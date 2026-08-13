@@ -54,6 +54,6 @@ main{
     }
 }
 &::after{
-    content;
+    content " ",
     background: red;
 }
