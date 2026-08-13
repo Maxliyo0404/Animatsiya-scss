@@ -53,6 +53,7 @@ main{
         }
     }
 }
-.card .card1{
+&::after{
+    content;
     background: red;
 }
