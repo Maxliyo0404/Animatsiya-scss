@@ -45,6 +45,7 @@ main section .card {
   }
 }
 
-a {
+::after {
+  content: "";
   background: red;
 }/*# sourceMappingURL=style.css.map */
