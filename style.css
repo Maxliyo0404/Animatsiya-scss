@@ -46,7 +46,7 @@ main section .card::after {
   height: 50px;
   background: greenyellow;
   position: absolute;
-  top: 10px;
+  bo: 10px;
   left: 10px;
 }
 @keyframes cards {
