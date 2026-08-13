@@ -45,7 +45,7 @@ main section .card {
   }
 }
 
-.card1::after {
+.card::after {
   content: "";
   background: red;
   display: block;
