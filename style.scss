@@ -33,7 +33,7 @@ main{
             animation-timing-function: ease-in-out;
             animation-direction: alternate;
             animation-fill-mode: backwards;
-              &::after {
+              &::before {
                 content: "";
                 display: block;
                 width: 50px;  // Eni
@@ -48,7 +48,7 @@ main{
                 display: block;
                 width: 50px;  // Eni
                 height: 50px; // Bo'yi
-                background: red;
+                background: greenyellow;
                 position: absolute;
                 top: 10px;
                 left: 10px;
