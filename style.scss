@@ -1,88 +1,84 @@
-
-
-header{
-    background: plum;
-    .container{
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px;
-
-        }
-
+header {
+  background: plum;
+  .container {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
     }
+  }
 }
-main{
-    margin-top: 100px;
-    section{
-        .card{
-            width: 300px;
-            height: 300px;
-            background: blue;
-            position: relative;
-            color: white;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 17px;
-            border-radius: 10px;
-            animation-name: cards;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in-out;
-            animation-direction: alternate;
-            animation-fill-mode: backwards;
-              &::before {
-                content: "";
-                display: block;
-                width: 50px;  // Eni
-                height: 50px; // Bo'yi
-                background: red;
-                position: absolute;
-                top: 10px;
-                right: 10px;
-            }  
-              &::after {
-                content: "";
-                display: block;
-                width: 50px;  // Eni
-                height: 50px; // Bo'yi
-                background: greenyellow;
-                position: absolute;
-                bottom: 10px;
-                left: 10px;
-            }  
-            &::before {
+main {
+  margin-top: 100px;
+  section {
+    .card {
+      width: 300px;
+      height: 300px;
+      background: blue;
+      position: relative;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      border-radius: 10px;
+      animation-name: cards;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+      animation-fill-mode: backwards;
+      &::before {
+        content: "";
+        display: block;
+        width: 50px; // Eni
+        height: 50px; // Bo'yi
+        background: red;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 50px; // Eni
+        height: 50px; // Bo'yi
+        background: greenyellow;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+      &::before {
         content: "";
         display: block;
         width: 50px;
         height: 50px;
         background: red;
-        
+
         /* O'rtaga qo'yish uchun quyidagilar yoziladi: */
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
+      }
 
-            @keyframes  cards{
-                0%{
-                    transform: translate(0, -100px);
-                }
-                25%{
-                    transform: translate(180px) rotate(180px);
-                }
-                50%{
-                    transform: translate(220px) rotate(360deg);
-                    border-radius: 20px;
-                }
-                100%{
-                    transform: translate(400px, 200px) ;
-                }
-            }
+      @keyframes cards {
+        0% {
+          transform: translate(0, -100px);
         }
+        25% {
+          transform: translate(180px) rotate(180px);
+        }
+        50% {
+          transform: translate(220px) rotate(360deg);
+          border-radius: 20px;
+        }
+        100% {
+          transform: translate(400px, 200px);
+        }
+      }
     }
+  }
 }
