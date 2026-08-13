@@ -43,10 +43,4 @@ main section .card {
   100% {
     transform: translate(400px, 200px);
   }
-}
-
-.card::after {
-  content: "";
-  background: red;
-  display: block;
 }/*# sourceMappingURL=style.css.map */
